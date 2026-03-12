@@ -14,8 +14,6 @@ min-height:200vh;
 overflow-x:hidden;
 }
 
-/* BACKGROUND COLOR CHANGER */
-
 @keyframes bgShift{
 0%{background:#ff8ad8;}
 25%{background:#7afcff;}
@@ -100,7 +98,7 @@ position:absolute;
 transform:rotate(90deg) scaleY(0.2);
 }
 
-/* WALL */
+/* DRAG WALL */
 
 .wall{
 width:300px;
@@ -136,10 +134,10 @@ from{transform:rotate(0)}
 to{transform:rotate(360deg)}
 }
 
-/* PROJECT TAB */
+/* PROJECT SECTION */
 
 .project-box{
-max-width:700px;
+max-width:800px;
 margin:auto;
 background:white;
 padding:40px;
@@ -147,13 +145,41 @@ border-radius:20px;
 box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
 
-.project-box h2{
-font-size:36px;
+.project-box img{
+width:100%;
+border-radius:15px;
+margin-bottom:20px;
 }
 
-.project-box p{
-font-size:18px;
-line-height:1.6;
+/* ARCHITECTS SECTION */
+
+.architects{
+margin-top:120px;
+padding:60px 20px;
+background:rgba(255,255,255,0.6);
+border-radius:20px;
+}
+
+.team{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.member{
+background:white;
+padding:20px;
+border-radius:15px;
+width:200px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.member img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
 }
 
 </style>
@@ -166,7 +192,7 @@ line-height:1.6;
 <button onclick="showTab('project')">Amazing Project</button>
 </nav>
 
-<!-- LAB SECTION -->
+<!-- MAIN LAB PAGE -->
 
 <div id="lab" class="section active">
 
@@ -199,60 +225,76 @@ line-height:1.6;
 
 </div>
 
-<h2>Drag the Wall (Urban Planning Mode)</h2>
+<h2>Drag the Wall</h2>
 
 <div class="wall" id="wall"></div>
 
 <h2>Rotating Floorplan</h2>
 
 <div class="floorplan">
-
 <div class="room r1"></div>
 <div class="room r2"></div>
 <div class="room r3"></div>
+</div>
+
+<!-- ARCHITECTS INFO -->
+
+<div class="architects">
+
+<h2>Meet Our Architects</h2>
+
+<div class="team">
+
+<div class="member">
+<img src="https://picsum.photos/200?random=1">
+<h3>Professor Wobble</h3>
+<p>Founder and specialist in gravity-defying buildings.</p>
+</div>
+
+<div class="member">
+<img src="https://picsum.photos/200?random=2">
+<h3>Luna Spiral</h3>
+<p>Expert in experimental shapes and rotating floorplans.</p>
+</div>
+
+<div class="member">
+<img src="https://picsum.photos/200?random=3">
+<h3>Brick O'Clock</h3>
+<p>Urban designer who believes every wall should be movable.</p>
+</div>
+
+</div>
 
 </div>
 
 </div>
 
-<!-- PROJECT SECTION -->
+<!-- PROJECT PAGE -->
 
 <div id="project" class="section">
 
 <div class="project-box">
 
+<img src="https://picsum.photos/800/400?random=5">
+
 <h2>The Floating Banana Tower 🍌</h2>
 
 <p>
 Our most ambitious project began with a simple question:
-<b>"What if gravity was more of a suggestion?"</b>
+<b>"What if gravity was optional?"</b>
 </p>
 
 <p>
 The Floating Banana Tower is a 72-floor experimental skyscraper
 inspired by the natural elegance of a slightly overripe banana.
-Instead of straight lines, the tower bends gracefully toward the sun,
-creating a silhouette that scientists describe as
-<i>"architecturally suspicious but emotionally inspiring."</i>
+Instead of straight lines, the tower curves toward the sun,
+creating one of the most unusual skylines ever imagined.
 </p>
 
 <p>
-Inside the building you will find:
-</p>
-
-<p>
-🌿 Vertical forests growing through the lobby<br>
-🛗 Elevators that occasionally choose their own destination<br>
-🌞 Windows carefully angled to maximize dramatic sunsets<br>
-☕ A rooftop café designed specifically for philosophical architects
-</p>
-
-<p>
-While most buildings simply stand still,
-the Banana Tower gently sways with the wind —
-a reminder that architecture,
-like life,
-should never be completely stable.
+Inside the tower you will find vertical gardens,
+philosophical rooftop cafés,
+and elevators that sometimes choose their own destination.
 </p>
 
 </div>
